@@ -1,0 +1,24 @@
+def is_prime(x):
+    if x > 3:
+        n = range(x)
+        print n
+        n.remove(0)
+        n.remove(1)
+        print n
+        for num in n:
+            if x % num == 0:
+                Result = False
+                break
+            else:
+                Result = True
+    elif x == 2:
+        print "2"
+        return True
+    elif x == 3:
+        print "3"
+        return True
+    else:
+        print "else"
+        return False
+    return Result
+print is_prime(4)
