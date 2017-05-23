@@ -1,0 +1,12 @@
+def digit_sum(n):
+    count = 0
+    x = 0
+    y = 0
+    while len(str(n)) > count:
+        if y == 0:
+            y = n
+        x = x + y % 10
+        y = (y // 10)
+        count += 1
+    return x
+print digit_sum(1234)
