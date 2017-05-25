@@ -1,0 +1,12 @@
+def median(numbers):
+    x = sorted(numbers)
+    if len(numbers) % 2 == 0:
+        x1 = x[len(x) / 2]
+        print x1
+        x2 = x[len(x) /2 -1]
+        print x2
+        median = (x1+x2)/2.0
+    else:
+        median = x[len(x) / 2]
+    return median
+print median([1,2,5,6,6,6])
